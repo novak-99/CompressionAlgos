@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+#include <string>
 
  std::map<char, int> RLE(std::string &data){ // Data is in form of str.
     std::map<char, int> compressedData; 
@@ -26,3 +27,4 @@ int main(){
     printData(compressedData);
     return 0; 
 }
+
