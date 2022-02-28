@@ -33,6 +33,7 @@ int main(){
     std::vector<std::vector<double>> transform = trans.discreteCosineTransform(input);
     alg.printMatrix(transform);
 
+    std::cout << std::endl;
 
     std::vector<std::vector<double>> Q = {
         {16,11,10,16,24,40,51,61},

@@ -5,7 +5,7 @@
  std::map<char, int> RLE(std::string &data){ // Data is in form of str.
     std::map<char, int> compressedData; 
     for(int i = 0; i < data.length(); i++){
-        if(i > 0 && data[i] == data[i - 1]){
+        if(compressedData.find(data[i]) != compressedData.end()){ // If char already exists.
             compressedData[data[i]]++;
             continue; 
         }
